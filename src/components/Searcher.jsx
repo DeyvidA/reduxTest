@@ -6,6 +6,7 @@ const Searcher = () => {
       placeholder="input search text"
       enterButton="Search"
       size="large"
+      style={{ marginBottom: 10 }}
     />
   );
 };
