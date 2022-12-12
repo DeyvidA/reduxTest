@@ -4,8 +4,10 @@ import "./PokemonList.css";
 const PokemonList = ({ pokemons }) => {
   return (
     <div className="PokemonList">
-      {pokemons.map((pokemon) => {
-        return <PokemonCard />;
+      {pokemons.map((pokemon, index) => {
+        return (
+          <PokemonCard name={pokemon.name} url={pokemon.url} key={index} />
+        );
       })}
     </div>
   );
